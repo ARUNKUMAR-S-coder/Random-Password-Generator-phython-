@@ -1,0 +1,15 @@
+# code:- 
+import random
+
+print("Welcome to Random Password Generator")
+
+randomchar = "ABCDEFGHIKaabcdefhijk@#€¥$"
+
+num_passwords = int(input("Enter number of passwords required: "))
+password_length = int(input("Enter length of each password: "))
+
+for _ in range(num_passwords):
+    pwd = ""
+    for _ in range(password_length):
+        pwd += random.choice(randomchar)
+    print(pwd)
